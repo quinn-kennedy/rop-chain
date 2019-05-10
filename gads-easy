@@ -1,0 +1,149 @@
+Processing file: easy-gads-vuln
+
+0x000010b3 : sbb al, 0x24 ; ret
+
+0x000010c1 : sbb al, 0x24 ; ret
+
+0x000010b1 : hlt  ; mov ebx, dword ptr [esp] ; ret
+
+0x000010b0 : push esp ; mov ebx, dword ptr [esp] ; ret
+
+0x000010bf : nop  ; mov ebx, dword ptr [esp] ; ret
+
+0x000010bd : nop  ; nop  ; mov ebx, dword ptr [esp] ; ret
+
+0x000010bb : nop  ; nop  ; nop  ; mov ebx, dword ptr [esp] ; ret
+
+0x000010b9 : nop  ; nop  ; nop  ; nop  ; mov ebx, dword ptr [esp] ; ret
+
+0x000010b7 : nop  ; nop  ; nop  ; nop  ; nop  ; mov ebx, dword ptr [esp] ; ret
+
+0x000010b4 : and al, 0xc3 ; nop  ; nop  ; nop  ; nop  ; nop  ; mov ebx, dword ptr [esp] ; ret
+
+0x000011b5 : mov edx, dword ptr [esp] ; ret
+
+0x000010ff : les edx, ptr [eax] ; leave  ; ret
+
+0x000010fe : add esp, 0x10 ; leave  ; ret
+
+0x00001153 : pop ebp ; cld  ; leave  ; ret
+
+0x0000114e : rol byte ptr [ebx + 0x5d8b10c4], cl ; cld  ; leave  ; ret
+
+0x00001150 : les edx, ptr [eax] ; mov ebx, dword ptr [ebp - 4] ; leave  ; ret
+
+0x0000114f : add esp, 0x10 ; mov ebx, dword ptr [ebp - 4] ; leave  ; ret
+
+0x000011a3 : pop ebp ; cld  ; leave  ; ret
+
+0x0000119d : aaa  ; add byte ptr [eax], al ; add byte ptr [ecx], al ; mov ebx, dword ptr [ebp - 4] ; leave  ; ret
+
+0x0000119b : mov byte ptr [ebx + 0x37], 1 ; mov ebx, dword ptr [ebp - 4] ; leave  ; ret
+
+0x00001100 : adc cl, cl ; ret
+
+0x000011b6 : adc al, 0x24 ; ret
+
+0x000010fd : rol byte ptr [ebx - 0x3c36ef3c], 1 ; lea esi, [esi] ; nop  ; ret
+
+0x000011d1 : add byte ptr [eax], al ; add ch, cl ; cmp byte ptr [ebx], 0xb8 ; add dword ptr [eax], eax ; add byte ptr [eax], al ; int 0x80 ; xor eax, eax ; ret
+
+0x000011d8 : add byte ptr [eax], al ; add byte ptr [eax + 1], bh ; int 0x80 ; xor eax, eax ; ret
+
+0x000011d7 : add byte ptr [eax], al ; add byte ptr [eax], al ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011d0 : add al, 0 ; add byte ptr [eax], al ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011cc : add byte ptr [eax], al ; add byte ptr [eax + 4], bh ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011cb : add dword ptr [eax], eax ; add byte ptr [eax], al ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011c6 : and byte ptr [eax], al ; add byte ptr [ebx + 1], bh ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011c7 : inc eax ; add byte ptr [eax], al ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011c2 : add byte ptr [eax], al ; add byte ptr [ecx + 0x4020], bh ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011c1 : or eax, dword ptr [eax] ; add byte ptr [eax], al ; mov ecx, 0x4020 ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011be : nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x4020 ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011bc : nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x4020 ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011b4 : dec dword ptr [ebx + 0x66c32414] ; nop  ; nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x4020 ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011b7 : and al, 0xc3 ; nop  ; nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x4020 ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; xor eax, eax ; ret
+
+0x000011dd : add byte ptr [eax], al ; add ch, cl ; xor byte ptr [ecx], 0xc0 ; ret
+
+0x000011eb : xor edx, edx ; ret
+
+0x000011e5 : inc eax ; ret
+
+0x000011ec : rol bl, cl ; inc edx ; ret
+
+0x000011e3 : rol bl, 0x40 ; ret
+
+0x000011e7 : pop ebx ; ret
+
+0x000011e9 : pop ecx ; ret
+
+0x000012d5 : add esp, 0xc ; pop ebx ; pop esi ; pop edi ; pop ebp ; ret
+
+0x000012d7 : or al, 0x5b ; pop esi ; pop edi ; pop ebp ; ret
+
+0x000012d4 : jecxz 0x1259 ; les ecx, ptr [ebx + ebx*2] ; pop esi ; pop edi ; pop ebp ; ret
+
+0x000011f0 : not ecx ; ret
+
+0x000011f1 : rol ebx, 1 ; pop ebx ; int 0x80 ; ret
+
+0x00001211 : add byte ptr [eax], al ; add ch, cl ; cmp byte ptr [ebx], 0xb8 ; add dword ptr [eax], eax ; add byte ptr [eax], al ; int 0x80 ; dec ebx ; ret
+
+0x00001218 : add byte ptr [eax], al ; add byte ptr [eax + 1], bh ; int 0x80 ; dec ebx ; ret
+
+0x00001217 : add byte ptr [eax], al ; add byte ptr [eax], al ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001210 : add al, 0 ; add byte ptr [eax], al ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x0000120c : add byte ptr [eax], al ; add byte ptr [eax + 4], bh ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x0000120b : add dword ptr [eax], eax ; add byte ptr [eax], al ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001209 : add byte ptr [ebx + 1], bh ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001207 : inc eax ; add byte ptr [eax], al ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001206 : sub al, 0x40 ; add byte ptr [eax], al ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001202 : add byte ptr [eax], al ; add byte ptr [ecx + 0x402c], bh ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001201 : or eax, dword ptr [eax] ; add byte ptr [eax], al ; mov ecx, 0x402c ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x000011fe : nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x402c ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x000011fc : nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x402c ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x000011fa : nop  ; nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x402c ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x000011f5 : add bl, 0x66 ; nop  ; nop  ; nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x402c ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x000011f7 : nop  ; nop  ; nop  ; nop  ; nop  ; mov edx, 0xb ; mov ecx, 0x402c ; mov ebx, 1 ; mov eax, 4 ; int 0x80 ; mov ebx, 0 ; mov eax, 1 ; int 0x80 ; dec ebx ; ret
+
+0x00001276 : popal  ; cld  ; ret
+
+0x00001271 : clc  ; pop ecx ; pop ebx ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x00001270 : clc  ; pop ecx ; pop ebx ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x0000126b : add byte ptr [eax], al ; add byte ptr [eax], al ; lea esp, [ebp - 8] ; pop ecx ; pop ebx ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x00001268 : les edx, ptr [eax] ; mov eax, 0 ; lea esp, [ebp - 8] ; pop ecx ; pop ebx ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x00001267 : add esp, 0x10 ; mov eax, 0 ; lea esp, [ebp - 8] ; pop ecx ; pop ebx ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x00001269 : adc byte ptr [eax], bh ; lea esp, [ebp - 8] ; pop ecx ; pop ebx ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x00001266 : inc dword ptr [ebx + 0xb810c4] ; add byte ptr [eax], al ; add byte ptr [ebp + 0x5b59f865], cl ; pop ebp ; lea esp, [ecx - 4] ; ret
+
+0x000012df : add bl, dh ; ret
